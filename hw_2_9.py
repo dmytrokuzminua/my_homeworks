@@ -2,7 +2,7 @@
 
 
 def memoize(func):
-    """ Cash function"""
+    """ Cash function, returns function 'wrapper'"""
     cache = {}
 
     def wrapper(n):
@@ -15,8 +15,8 @@ def memoize(func):
     return wrapper
 
 
-def factorial(n: int):
-    """ Factorial recurtion functuon """
+def factorial(n: int) -> int:
+    """ Factorial recurtion functuon, returns n! """
     if n in (0, 1):
         return 1
     return n * factorial(n - 1)

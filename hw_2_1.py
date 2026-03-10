@@ -1,7 +1,7 @@
 """ Homework 2 task 1 """
 
 
-def sum(*args: int|float):
+def sum(*args: int|float) -> None:
     """own function with name -sum- """
     print("This is my custom sum function!")
 

@@ -2,9 +2,9 @@
 
 
 def create_product(name: str, price: int|float, quantity: int):
-    """ Create product and change the price"""
-    def get_info():
-        """ Get product`s info for print"""
+    """ Create product and change the price, returns currying functions 'get_info' & 'change_price' """
+    def get_info() -> str:
+        """ Returns product`s info"""
         return f"Товар: {name}, Ціна: {price}, Кількість: {quantity}"
 
     def change_price(new_price: int|float):

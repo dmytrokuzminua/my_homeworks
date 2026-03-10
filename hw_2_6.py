@@ -2,9 +2,9 @@
 
 
 def create_calculator(operation: str):
-    """ Create calculator function"""
-    def calculate(x: int|float, y: int|float):
-        """Create func for all operations"""
+    """ Create calculator function, returns closured function 'calculate' """
+    def calculate(x: int|float, y: int|float) -> int|float:
+        """ Func for all math operations, returns the result of the calculation"""
         if operation == "+":
             return x + y
 

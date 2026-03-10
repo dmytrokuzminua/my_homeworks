@@ -2,14 +2,14 @@
 
 
 def create_user_settings():
-    """Func of creating user`s settings"""
+    """Func of creating user`s settings, returns closured function 'user_settings' """
     settings = {
         "theme": "light",
         "language": "uk",
         "notifications": True
     }
     def user_settings(action: str, key: str = None, value: str|bool =None):
-        """ Show or update user settings"""
+        """ Show or update user settings, returns settings or set settings """
         nonlocal settings
         if action == "view":
             return settings
