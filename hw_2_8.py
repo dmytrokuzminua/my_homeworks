@@ -1,4 +1,4 @@
-""" Homework 2 task 8 """
+""" Homework 2 task 8  """
 
 
 def create_user_settings():

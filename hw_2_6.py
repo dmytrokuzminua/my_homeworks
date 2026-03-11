@@ -1,4 +1,4 @@
-""" Homework 2 task 6 """
+""" Homework 2 task 6  """
 
 
 def create_calculator(operation: str):

@@ -1,4 +1,4 @@
-""" Homework 2 task 9 """
+""" Homework 2 task 9  """
 
 
 def memoize(func):
