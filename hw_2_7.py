@@ -5,7 +5,7 @@ total_expense = 0
 
 
 def add_expense(new_sum: int|float):
-    """ Adds the sum of expenses """
+    """ Adds the sum of expenses, returns None """
     global total_expense
     total_expense += new_sum
     print(f"Додано витрату: {new_sum}")

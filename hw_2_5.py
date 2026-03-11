@@ -5,14 +5,14 @@ events = []
 
 
 def event_calendar():
-    """Event calendar function"""
+    """Event calendar function, returns functions """
     def add_event(event: str):
         """Add event to calendar"""
         events.append(event)
         print(f"Подію {event} додано.")
 
     def delete_event(event: str):
-        """Delete event from calendar"""
+        """Delete event from calendar returns None"""
         if event in events:
             events.remove(event)
             print(f"Подію {event} видалено.")
@@ -20,7 +20,7 @@ def event_calendar():
             print("Подію не знайдено.")
 
     def view_events():
-        """Print all future events"""
+        """Print all future events returns None"""
         if events:
             print("Майбутні події:")
             for e in events:

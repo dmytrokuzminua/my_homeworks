@@ -7,7 +7,7 @@ subscribers = []
 def  subscribe(new_subscriber: str):
     """ Add new subscriber to subscribers """
     def confirm_subscription():
-        """ Confirm a new subscriber """
+        """ Confirm a new subscriber returns None"""
         print(f"Підписка підтверджена для {new_subscriber}.")
 
     subscribers.append(new_subscriber)
@@ -15,7 +15,7 @@ def  subscribe(new_subscriber: str):
 
 
 def unsubscribe(subscriber_to_delete: str):
-    """ Delete targeted subcriber """
+    """ Delete targeted subcriber returns None """
     if subscriber_to_delete in subscribers:
         subscribers.remove(subscriber_to_delete)
         print(f"Підписника {subscriber_to_delete} вилучено!")

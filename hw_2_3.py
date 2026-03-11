@@ -5,7 +5,7 @@ discount = 0.1
 
 
 def create_order(price: float, add_addit_disc: bool):
-    """ Create order function """
+    """ Create order function returns None """
     def apply_additional_discount() -> float:
         """ Add additional discount, returns new discount"""
         nonlocal new_price

@@ -2,7 +2,7 @@
 
 
 def sum(*args: int|float) -> None:
-    """own function with name -sum- """
+    """own function with name -sum- returns None"""
     print("This is my custom sum function!")
 
 

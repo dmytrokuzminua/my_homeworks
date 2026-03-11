@@ -5,7 +5,7 @@ DEFAULT_TIME = 60
 
 
 def training_session(rounds: int):
-    """ Calculate and print training`s session duration """
+    """ Calculate and print training`s session duration returns None """
     def adjust_time() -> int:
         """ Set time duration -5, returns time reduced by 5 """
         nonlocal additional_line
